@@ -1,0 +1,117 @@
+img {
+  width: 20%;
+  margin-top: 2%;
+  margin-left: 20%;
+}
+
+.fa {
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20%;
+}
+
+a {
+  margin-right: 1%;
+}
+
+small {
+  display: flex;
+  justify-content: center;
+}
+
+#slideshow {
+  overflow: hidden;
+  height: 360px;
+  width: 728px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 18s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 520px;
+  width: 728px;
+}
+
+.slide:nth-child(1) {
+  background-image: url('images/marathonGenerator.png');
+  background-size: contain;
+}
+
+.middle {
+  display: none;
+}
+
+.slide-wrapper:hover .slide {
+  opacity: 0.1;
+}
+
+.slide-wrapper:hover .middle {
+  opacity: 1;
+  display: block
+}
+
+.slide:nth-child(2) {
+  background-image: url('images/clique.png');
+  background-size: contain;
+}
+
+.slide:nth-child(3) {
+  background-image: url('images/newCollage.jpg');
+  background-size: contain;
+}
+
+.slide:nth-child(4) {
+  background: #D9D055;
+}
+
+@-webkit-keyframes slide {
+  20% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: -728px;
+  }
+  50% {
+    margin-left: -728px;
+  }
+  60% {
+    margin-left: -1456px;
+  }
+  70% {
+    margin-left: -1456px;
+  }
+  80% {
+    margin-left: -2184px;
+  }
+  90% {
+    margin-left: -2184px;
+  }
+}
+
+body {
+  background: linear-gradient(to right, black, whitesmoke, black);
+  margin: 0;
+}
+
+h2 {
+  margin-left: 20%;
+}
+
+p {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+footer {
+  margin-top: 6%;
+}
